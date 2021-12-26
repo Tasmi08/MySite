@@ -197,10 +197,10 @@ nav {
 
 nav ul li {
   float: left;
-  margin-right: 15px;
+  margin-right: 1px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  margin-left: 40px;
+  margin-left: 25px;
 }
 
 nav ul li a {
@@ -212,9 +212,9 @@ nav ul li a {
   font-family: 'Poppins', helvetica;
   font-weight: 500;
   line-height: 16px;
-  text-transform: uppercase;
+  
   letter-spacing: 0.02em;
-  text-transform: capitalize;
+  text-transform:none;
 }
 
 .logo {
@@ -232,7 +232,7 @@ nav ul li a {
 }
 
 .active {
-  color: #afafaf;
+  color: #313030;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -394,31 +394,45 @@ nav ul li a {
 /*  Portfolio
 /*-----------------------------------------------------------------------------------*/
 
-#portfolio {
+#portfolio,  #portfolio-blog {
+  height: auto;
+  width: 100%;
+  background: #f7f7f7;
+  padding-bottom: 60px;
   position: relative;
-  padding-bottom: 50px;
 }
 
-#portfolio .portfolio-list {
-  margin-bottom: 50px;
+#portfolio-blog {
+  background: #fff;
+  padding-bottom: 30px;
 }
 
-#portfolio .portfolio-list .nav {
+#portfolio .portfolio-block {
   display: inline-block;
-  margin: 0;
+  height: auto;
+  width: 100%;
 }
 
-#portfolio .portfolio-list .nav li {
-  margin: 0 40px 0 0;
-  float: left;
-  font-size: 14px;
-  color: #999999;
-  line-height: 16px;
-  cursor: pointer;
-  font-family: 'Poppins', helvetica;
+#portfolio .portfolio-block .portfolio-info {
+  position: relative;
+}
+
+.portfolio-block .portfolio-info img {
+  max-width: 100%;
+}
+
+.portfolio-block .portfolio-info .portfolio-txt {
+  /*padding: 5px 0px;*/
+  position: relative;
+}
+
+.portfolio-block .portfolio-info .portfolio-txt h4 a {
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0 0 13px 0;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+  color: #292929;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -426,7 +440,7 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
-#portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
+.portfolio-block .portfolio-info .portfolio-txt h4 a:hover {
   color: #b8a07e;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -435,20 +449,10 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
-#portfolio .portfolio-container {
-  display: inline-block;
-  margin-bottom: 50px;
-  width: 100%;
-}
-
-.portfolio-thumbnail {
-  margin-bottom: 30px;
-  overflow: hidden;
-  min-height: 260px;
-}
-
-.portfolio-thumbnail img {
-  max-width: 100%;
+.portfolio-block .portfolio .portfolio-txt p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -515,6 +519,72 @@ nav ul li a {
   font-size: 14px;
   line-height: 24px;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*  Journal
+/*-----------------------------------------------------------------------------------*/
+
+#journal1,  #journal1-blog {
+  height: auto;
+  width: 100%;
+  background: #f7f7f7;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+#journal1-blog {
+  background: #fff;
+  padding-bottom: 30px;
+}
+
+#journal1 .journal-block {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+
+#journal1 .journal-block1 .journal-info1 {
+  position: relative;
+}
+
+.journal-block1 .journal-info1 img {
+  max-width: 100%;
+}
+
+.journal-block1 .journal-info1 .journal-txt1 {
+  /*padding: 5px 0px;*/
+  position: relative;
+}
+
+.journal-block1 .journal-info1 .journal-txt1 h4 a {
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0 0 13px 0;
+  font-weight: 500;
+  color: #292929;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.journal-block1 .journal-info1 .journal-txt1 h4 a:hover {
+  color: #b8a07e;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.journal-block1 .journal-info1 .journal-txt1 p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /*  Teaching Experience
